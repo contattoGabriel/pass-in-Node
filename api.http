@@ -1,0 +1,37 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": "Novo evento do Marcos",
+    "detais": null,
+    "maximumAttendees": 5
+}
+
+####
+
+POST http://localhost:3333/events/d41e73df-ed4d-4454-ae09-b5fbe98eebf7/attendees
+Content-Type: application/json
+
+{
+    "name": "Marcos Oliveira",
+    "email": "marquinsemdedo@gmail.com"
+}
+
+
+###
+
+GET http://localhost:3333/events/d41e73df-ed4d-4454-ae09-b5fbe98eebf7
+
+
+###
+
+GET http://localhost:3333/attendees/3/badge
+
+###
+
+GET http://localhost:3333/attendees/3/check-in
+
+###
+
+
+GET http://localhost:3333/events/24c2a2e7-5b26-4641-ace3-d95eadffafa7/attendees
